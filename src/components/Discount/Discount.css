@@ -1,0 +1,64 @@
+.discount-flags {
+    margin-top: -1.5rem;
+    width: 100%;
+    height: 5rem;
+    background-image: url("/public/flags-top.png");
+}
+.discount-flags.bottom {
+    transform: rotate(180deg);
+    margin-bottom: -1.5rem;
+}
+
+
+.discount-main-screen h1 {
+    width: max-content;
+    font-size: 60pt;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    
+}
+
+.carousel-images {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.carousel-images img {
+    width: 102rem;
+    height: 26rem;
+}
+
+.discount-button {
+    
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+
+.discount-button.left {
+    margin-right: 3rem;
+    transform: rotate(180deg);
+}
+
+.discount-button.right {
+    margin-left: 3rem;
+}
+
+.discount-button svg path {
+    transition: .8s;
+    -webkit-transition: linear .8s;
+}
+
+.discount-button svg path:hover {
+    fill: #000000;
+    stroke: #13B3F8;
+}
+
+.discount-button svg {
+    margin-left: -1.2rem;
+    margin-bottom: -1.2rem;
+    margin-top: -1.2rem;
+}
+
