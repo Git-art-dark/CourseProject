@@ -1,18 +1,54 @@
+import { useState, useEffect } from 'react'
 import { svgProps } from '../../data'
-import carousel from '/carousel_1.png'
+import carousel1 from '/carousel_1.png'
+import carousel2 from '/carousel_2.jpg'
+import carousel3 from '/carousel_3.jpg'
 
-function ButtonDiscount({className}) {
-    return (
-        <button className={className}>
+export default function Discount() {
+    const [activeIndex, setActiveIndex] = useState(0)
+    const [carouselImage, setCarouselImage] = useState(carousel1)
+
+    const images = [carousel1, carousel2, carousel3]
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveIndex(prevIndex => {
+                const nextIndex = (prevIndex + 1) % images.length
+                setCarouselImage(images[nextIndex])
+                return nextIndex
+            })
+        }, 30000)
+
+
+        return () => clearInterval(interval)
+    }, []);
+
+    function ButtonDiscount({className}) {
+        return (
+            <button className={className}>
                 <svg width="80" height="90" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d={svgProps[2].d} fill={svgProps[2].fill} stroke={svgProps[2].strokeColor} strokeWidth={svgProps[2].strokeWidth}/>
                 </svg>
-        </button>
-    )
-}
+            </button>
+        )
+    }
 
+    function ButtonCarousel({index}) {
+        const handleClick = () => {
+            setActiveIndex(index)
+            setCarouselImage(images[index])
+        }
 
-export default function Discount() {
+        const rectClass = activeIndex === index ? 'active' : ''
+
+        return (
+            <button className='carousel-button' onClick={handleClick}>
+                <svg width="130" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="128" height="7" rx="3.5" fill="#fff" stroke="#000" strokeWidth="2" className={rectClass}/>
+                </svg>
+            </button>
+        )
+    }
 
     return (
         <>
@@ -22,10 +58,15 @@ export default function Discount() {
 
                 <div className="carousel-images">
                     <ButtonDiscount className='discount-button left'></ButtonDiscount>
-                    <img src={carousel} alt="carousel" />
+                    <img src={carouselImage} alt="carousel" />
                     <ButtonDiscount className='discount-button right'></ButtonDiscount>
                 </div>
                 
+                <div className='carousel-button-discount'>
+                    <ButtonCarousel index={0}/>
+                    <ButtonCarousel index={1}/>
+                    <ButtonCarousel index={2}/>
+                </div>
             </div>
             <div className="discount-flags bottom"></div>
         </>

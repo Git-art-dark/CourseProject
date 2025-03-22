@@ -141,8 +141,15 @@ p {
   align-items: center;
   width: 100%;
   height: 83rem;
-  background-image: url('../public/backgroung-mainscreen.png');
+  background-image: url('/backgroung-mainscreen.png');
   background-position: center;
+}
+
+.catalog {
+  width: 80%;
+  height: 20rem;
+  background-color: #000000;
+
 }
 
 .main-title {

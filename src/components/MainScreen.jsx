@@ -5,6 +5,7 @@ export default function MainScreen() {
                 <h1>Premier Techno</h1>
                 <h4>Интернет-магазин бытовой техники и электроники</h4>
             </div>
+        
         </div>
     )
 }
