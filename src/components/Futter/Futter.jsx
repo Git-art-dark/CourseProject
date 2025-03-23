@@ -5,11 +5,11 @@ export default function Futter() {
     return(
         <>
             <div className="solid-stick"></div>
-            <div className="futter pt-serif-bold">
+            <div className="futter commissioner-regular">
                 
                 <div className="left-futter">
                 
-                    <h1>Контакты</h1>
+                    <h1 className="pt-serif-bold">Контакты</h1>
                     <span className="call">Номер телефона: <p>+7 (495) 135-04-23</p></span>
                     <span className="e-mail">
                         <p>E-mail: <a href="mailto:info@premier-techno.ru">info@premier-techno.ru</a></p>

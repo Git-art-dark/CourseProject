@@ -1,4 +1,6 @@
-import iconCart from '/plus.svg'
+import iconPlus from '/plus.svg'
+import iconPlusColor from '/plus-color.svg'
+
 
 export default function GoodsSection() {
     function GoodsNew({ className }) {
@@ -8,7 +10,7 @@ export default function GoodsSection() {
                 <h4>Посудомоечная машина CANDY CP 6F51LS-08</h4>
                 <img src="product_1.png" alt="product" />
                 <h4>23 999 руб.</h4>
-                <img src={iconCart} alt="cart" className='cart-buy' />
+                <img src={iconPlusColor} alt="cart" className='cart-buy' />
             </div>
         )
     }
@@ -16,11 +18,11 @@ export default function GoodsSection() {
     
     return (
         <section className="inline">
-            <GoodsNew className={'margin-first-elem product-section'} />
-            <GoodsNew className={'product-section'}/>
-            <GoodsNew className={'product-section'}/>
-            <GoodsNew className={'product-section'}/>
-            <GoodsNew className={'margin-last-elem product-section'} />
+            <GoodsNew className={'margin-first-elem product-section commissioner-regular'} />
+            <GoodsNew className={'product-section commissioner-regular'}/>
+            <GoodsNew className={'product-section commissioner-regular'}/>
+            <GoodsNew className={'product-section commissioner-regular'}/>
+            <GoodsNew className={'margin-last-elem product-section commissioner-regular'} />
         </section>
     )
 

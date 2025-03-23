@@ -8,7 +8,7 @@ const locate = "Краснодар"
 
 function Navbar(props) {
     return (
-        <a href='#' className='pt-serif-bold header-nav-text'>{props.title}</a>
+        <a href='#' className='commissioner-regular header-nav-text'>{props.title}</a>
 
     )
     
@@ -25,7 +25,7 @@ export default function Header() {
           <Navbar title={pages[4]}/>
 
           <div id='left-navbar'>
-            <h1 className='pt-serif-bold'>Ваш регион: <a href="#" className='pt-serif-bold header-nav-text'>{locate}</a>
+            <h1 className='commissioner-regular'>Ваш регион: <a href="#" className='commissioner-regular header-nav-text'>{locate}</a>
             </h1>
             <button className='button-nav-search-cart'>
               {/* <img src={iconSearch} alt="search" className='test1'/> */}
