@@ -53,13 +53,13 @@ export default function Discount() {
     return (
         <>
             <div className="discount-flags"></div>
-            <div className="discount-main-screen pt-serif-bold">
-                <h1>Акции</h1>
+            <div className="discount-main-screen">
+                <h1 className='main-h1 pt-serif-bold'>Акции</h1>
 
                 <div className="carousel-images">
-                    <ButtonDiscount className='discount-button left'></ButtonDiscount>
+                    {/* <ButtonDiscount className='discount-button left'></ButtonDiscount> */}
                     <img src={carouselImage} alt="carousel" />
-                    <ButtonDiscount className='discount-button right'></ButtonDiscount>
+                    {/* <ButtonDiscount className='discount-button right'></ButtonDiscount> */}
                 </div>
                 
                 <div className='carousel-button-discount'>

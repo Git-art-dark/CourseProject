@@ -1,0 +1,83 @@
+.futter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-futter {
+    margin: 0rem 0rem 0rem 15rem;
+    width: 50%;
+}
+
+.call {
+    display: flex;
+    flex-direction: row;
+}
+
+.call p {
+    margin-left: 1rem;
+    transition: color .8s;
+    -webkit-transition: color linear .8s;
+    cursor: copy;
+}
+
+.call p:hover {
+    color: #13B3F8;
+}
+
+.e-mail p a{
+    color: white;
+    text-decoration: none;
+}
+
+.e-mail p a:hover{
+    color: #13B3F8;
+    text-decoration: none;
+}
+
+.right-futter {
+    margin: 2rem 0rem 0rem 2rem;
+    width: 50%;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+.vk-logo img {
+    height: 5rem;
+}
+
+.yandex-logo img {
+    height: 5rem;
+}
+
+.right-futter li {
+    list-style-type: none;
+}
+
+.right-futter li a {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: white;
+    transition: color .8s;
+    -webkit-transition: color linear .8s;
+}
+
+.right-futter li a:hover {
+    color: #13B3F8;
+}
+
+.copyright {
+    width: 100%;
+    font-size: 11pt;
+}
+
+.copyright p{
+    padding-top: 1rem;
+}

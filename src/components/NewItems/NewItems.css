@@ -1,0 +1,62 @@
+.new-h1 {
+    width: max-content;
+    font-size: 60pt;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    
+}
+
+.solid-stick {
+    height: 1rem;
+    width: 100%;
+    background: rgb(200, 200, 200);
+
+}
+
+.product-section {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20rem;
+    transition: transform .8s ease;
+}
+
+.margin-first-elem {
+    margin-left: 5rem;
+}
+
+.margin-last-elem {
+    margin-right: 5rem;
+}
+
+.product-section:hover{
+    transform: scale(1.02);
+}
+
+.inline {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.cart-buy {
+    margin-top: 2rem;
+    width: 70px;
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+.product-section:hover img.cart-buy {
+    cursor: pointer;
+    opacity: .8;
+}
+
+
+
+

@@ -1,0 +1,31 @@
+.partners-main {
+    width: 100%;
+}
+.partner-section {
+    margin-top: -7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+.partners-img {
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.partners-img1 {
+    height: 15rem;
+}
+
+.partners-img2 {
+    height: 5rem;
+}
+
+.partners-img3 {
+    height: 13rem;
+}
+
+.new-h1.pt-serif-bold.margin-h1-partners {
+    margin-bottom: 5rem;
+}
