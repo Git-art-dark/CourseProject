@@ -22,14 +22,18 @@
     align-items: center;
     text-align: center;
     width: 20rem;
-    border: .3rem solid transparent;
-    border-radius: 1rem;
-    transition: all 0.8s linear;
+    border: solid;
+    border-color: transparent;
+    
+    border-radius: 0rem;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
-.product-section:hover{
-    border: .3rem solid #13B3F8;
-    transform: scale(1.02);
+.product-section:hover {
+    color: #13B3F8;
+    border-color: #13B3F8;
+    border-radius: .5rem;
 }
 
 .margin-first-elem {
@@ -38,6 +42,10 @@
 
 .margin-last-elem {
     margin-right: 5rem;
+}
+
+.product-section:hover{
+    transform: scale(1.02);
 }
 
 .inline {
@@ -52,12 +60,12 @@
     z-index: 1;
     position: absolute;
     opacity: 0;
-    transition: opacity .8s ease;
+    transition: opacity .4s ease;
 }
 
 .product-section:hover img.cart-buy {
     cursor: pointer;
-    opacity: 1;
+    opacity: .8;
 }
 
 

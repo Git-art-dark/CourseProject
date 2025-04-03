@@ -8,7 +8,7 @@ const locate = "Краснодар"
 
 function Navbar(props) {
     return (
-        <a href='#' className='commissioner-regular header-nav-text'>{props.title}</a>
+        <a href='#' className='arsenal-sc-regular header-nav-text'>{props.title}</a>
 
     )
     
@@ -25,7 +25,7 @@ export default function Header() {
           <Navbar title={pages[4]}/>
 
           <div id='left-navbar'>
-            <h1 className='commissioner-regular'>Ваш регион: <a href="#" className='commissioner-regular header-nav-text'>{locate}</a>
+            <h1 className='arsenal-sc-regular'>Ваш регион: <a href="#" className='arsenal-sc-bold header-nav-text'>{locate}</a>
             </h1>
             <button className='button-nav-search-cart'>
               {/* <img src={iconSearch} alt="search" className='test1'/> */}
@@ -35,7 +35,7 @@ export default function Header() {
               </svg>
             </button>
 
-            <button className='button-nav pt-serif-bold'>Войти</button>
+            <button className='button-nav arsenal-sc-bold'>Войти</button>
             <button className='button-nav-search-cart'>
               {/* <img src={iconCart} alt="cart" /> */}
               <svg width="45" height="45" fill="none" xmlns="http://www.w3.org/2000/svg">

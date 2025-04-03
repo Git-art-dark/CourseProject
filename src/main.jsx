@@ -5,6 +5,7 @@ import './components/Discount/Discount.css'
 import './components/NewItems/NewItems.css'
 import './components/Partners/Partners.css'
 import './components/Futter/Futter.css'
+import './adaptive1600.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />)

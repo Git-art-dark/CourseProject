@@ -2,17 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15pt;
 }
 
 .left-futter {
     margin: 0rem 0rem 0rem 15rem;
     width: 50%;
+    font-size: 20pt;
+    
 }
 
-.left-futter h1{
+.left-futter h1 { 
     font-size: 30pt;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .call {
@@ -34,6 +35,7 @@
 .e-mail p a{
     color: white;
     text-decoration: none;
+    transition: all .8s ease;
 }
 
 .e-mail p a:hover{
@@ -42,8 +44,9 @@
 }
 
 .right-futter {
-    margin: 0rem 2rem 0rem 0rem;
+    margin: 2rem 0rem 0rem 2rem;
     width: 50%;
+    font-size: 20pt;
 }
 
 .logo-section {
@@ -80,7 +83,6 @@
 }
 
 .copyright {
-    margin-top: 1rem;
     width: 100%;
     font-size: 11pt;
 }

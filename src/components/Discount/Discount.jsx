@@ -54,11 +54,13 @@ export default function Discount() {
         <>
             <div className="discount-flags"></div>
             <div className="discount-main-screen">
-                <h1 className='main-h1 pt-serif-bold'>Акции</h1>
+                <h1 className='main-h1 arsenal-sc-bold'>Акции</h1>
 
                 <div className="carousel-images">
                     {/* <ButtonDiscount className='discount-button left'></ButtonDiscount> */}
-                    <img src={carouselImage} alt="carousel" />
+                    <a href="https://23.rosguard.gov.ru/page/index/voennaya-sluzhba-po-kontraktu-v-podrazdeleniyax-yuzhnogo-okruga-vojsk-nacionalnoj-gvardii-rossijskoj-federacii">
+                        <img src={carouselImage} alt="carousel" />    
+                    </a>
                     {/* <ButtonDiscount className='discount-button right'></ButtonDiscount> */}
                 </div>
                 

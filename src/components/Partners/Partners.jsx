@@ -27,7 +27,7 @@ export default function Partners() {
     return (
         <> <div className='partners-main'>
                 <div className="solid-stick"></div>
-                <h1 className="new-h1 pt-serif-bold margin-h1-partners">Наши пратнёры</h1>
+                <h1 className="new-h1 arsenal-sc-bold margin-h1-partners">Наши пратнёры</h1>
                 <PartnerSection />
                 <PartnerSection />
             </div>
