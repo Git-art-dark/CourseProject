@@ -22,6 +22,7 @@ export default function GoodsSection() {
             <GoodsNew className={'product-section commissioner-regular'}/>
             <GoodsNew className={'product-section commissioner-regular'}/>
             <GoodsNew className={'product-section commissioner-regular'}/>
+            <GoodsNew className={'product-section commissioner-regular'}/>
             <GoodsNew className={'margin-last-elem product-section commissioner-regular'} />
         </section>
     )

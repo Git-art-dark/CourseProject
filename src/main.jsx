@@ -6,6 +6,7 @@ import './components/NewItems/NewItems.css'
 import './components/Partners/Partners.css'
 import './components/Futter/Futter.css'
 import './adaptive1600.css'
+import './adaptive360.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />)
