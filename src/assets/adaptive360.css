@@ -1,0 +1,92 @@
+@media (max-width: 360px) {
+  header {
+    display: none;
+  }
+
+  .button-nav {
+    display: none;
+  }
+
+  #main-screen {
+    height: 51rem;
+    padding-top: 7rem;
+  }
+
+  .main-title h1 {
+    font-size: 20pt;
+    margin: 0rem;
+    padding: 0rem;
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+
+  .main-title h4 {
+    margin-left: 1rem;
+    text-align: center;
+  }
+  .main-title {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .discount-main-screen,
+  .discount-flags {
+    display: none;
+  }
+
+  .inline {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    gap: 0;
+    margin-left: 5rem;
+  }
+
+  .product-section.commissioner-regular {
+    width: 7rem;
+  }
+
+  .product-section.commissioner-regular img {
+    width: 6rem;
+  }
+
+  .margin-first-elem.product-section.commissioner-regular {
+    margin-left: 0;
+  }
+  .new-h1.arsenal-sc-bold {
+    font-size: 26pt;
+    margin: 1rem 1rem 2rem;
+  }
+
+  .partners-main {
+    display: none;
+  }
+
+  .left-footer {
+    margin: 0rem 0rem 0rem 3rem;
+    font-size: small;
+  }
+
+  .right-footer {
+    margin: 0rem 0rem 0rem 1rem;
+    font-size: small;
+  }
+
+  .vk-logo img {
+    width: 3rem;
+  }
+  .yandex-logo img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .right-footer li {
+    display: flex;
+    flex-direction: column;
+  }
+  .copyright {
+    display: none;
+  }
+}

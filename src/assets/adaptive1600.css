@@ -1,0 +1,89 @@
+@media (max-width:1600px) {
+    .button-nav {
+        display: none;
+    }
+
+    #main-logo {
+        height: 2.5rem;
+    }
+
+    .button-nav-search-cart svg {
+        size: 2rem;
+    }
+
+    #main-screen {
+        height: 41rem;
+        padding-top: 7rem;
+    }
+
+    .main-h1.pt-serif-bold {
+        font-size: 3rem;
+    }
+
+    .main-title {
+        height: 20rem;
+    }
+
+    .main-title h4 {
+        font-size: 15pt;
+        margin-right: 1rem;
+        
+    }
+
+    .main-title h1 {
+        font-size: 40pt;
+        padding-left: 7rem;
+        padding-right: 1rem;
+    }
+
+    .pt-serif-bold {
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .carousel-images img {
+        width: 73rem;
+        height: 18rem;
+    }
+    .new-h1.pt-serif-bold {
+        font-size: 3rem;
+    }
+
+    .new-h1.arsenal-sc-bold.margin-h1-partners {
+        margin-bottom: 7rem;
+    }
+
+    .product-section {
+        font-size: .7rem;
+    }
+
+    .product-section img {
+        width: 10rem;
+    }
+
+    .product-section img.cart-buy {
+        width: 3rem;
+    }
+
+    .partners-img.partners-img1 {
+        height: 7rem;
+    }
+
+    .partners-img.partners-img2 {
+        height: 3rem;
+    }
+
+    .partners-img.partners-img3 {
+        height: 8rem;
+    }
+
+    .partner-section img{
+        width: 10rem;
+        margin-bottom: 4rem;
+    }
+    
+    
+
+    
+}

@@ -1,0 +1,63 @@
+#main-logo {
+  height: 3rem;
+}
+
+.header-nav-text {
+  font-size: 20pt;
+  margin-left: 2rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.8s;
+  -webkit-transition: color linear 0.8s;
+}
+
+.header-nav-text:hover {
+  color: #13b3f8;
+}
+
+#left-navbar {
+  margin-left: auto;
+  height: 90px;
+  display: flex;
+  padding: 0 2rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button-nav-search-cart {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 1.875rem;
+}
+
+.button-nav-search-cart svg path {
+  transition: 0.8s;
+  -webkit-transition: linear 0.8s;
+}
+
+.button-nav-search-cart svg path:hover {
+  fill: #13b3f8;
+}
+
+.button-nav {
+  margin-left: 1.875rem;
+  font-size: 20pt;
+  width: 11rem;
+  height: 3.5rem;
+  border-radius: 10rem;
+  border-width: 0.3rem;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-color: transparent;
+  border-width: none;
+  border-style: solid;
+  transition: all 0.8s;
+  -webkit-transition: linear 0.8s;
+}
+
+.button-nav:hover {
+  border-color: #13b3f8;
+  background-color: black;
+  color: white;
+}

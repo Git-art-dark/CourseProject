@@ -1,73 +1,67 @@
 .new-h1 {
-    width: max-content;
-    font-size: 60pt;
-    margin-top: 3rem;
-    margin-left: 3rem;
-    margin-bottom: 3rem;
-    
+  width: max-content;
+  font-size: 60pt;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
 }
 
 .solid-stick {
-    height: 1rem;
-    width: 100%;
-    background: rgb(200, 200, 200);
-
+  height: 1rem;
+  width: 100%;
+  background: rgb(200, 200, 200);
 }
 
 .product-section {
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 20rem;
-    border: solid;
-    border-color: transparent;
-    
-    border-radius: 0rem;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20rem;
+  border: solid;
+  border-color: transparent;
+
+  border-radius: 0rem;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .product-section:hover {
-    color: #13B3F8;
-    border-color: #13B3F8;
-    border-radius: .5rem;
+  color: #13b3f8;
+  border-color: #13b3f8;
+  border-radius: 0.5rem;
 }
 
 .margin-first-elem {
-    margin-left: 5rem;
+  margin-left: 5rem;
 }
 
 .margin-last-elem {
-    margin-right: 5rem;
+  margin-right: 5rem;
 }
 
-.product-section:hover{
-    transform: scale(1.02);
+.product-section:hover {
+  transform: scale(1.02);
 }
 
 .inline {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
 }
 
 .cart-buy {
-    margin-top: 2rem;
-    width: 70px;
-    z-index: 1;
-    position: absolute;
-    opacity: 0;
-    transition: opacity .4s ease;
+  margin-top: 2rem;
+  width: 70px;
+  z-index: 1;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .product-section:hover img.cart-buy {
-    cursor: pointer;
-    opacity: .8;
+  cursor: pointer;
+  opacity: 0.8;
 }
-
-
-
-

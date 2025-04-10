@@ -1,105 +1,99 @@
 .discount-flags {
-    margin-top: -1.5rem;
-    width: 100%;
-    height: 5rem;
-    background-image: url("/flags-top.png");
+  margin-top: -1.5rem;
+  width: 100%;
+  height: 5rem;
+  background-image: url("../../../public/images/flags-top.png");
 }
 .discount-flags.bottom {
-    transform: rotate(180deg);
-    margin-bottom: -1.5rem;
+  transform: rotate(180deg);
+  margin-bottom: -1.5rem;
 }
 
 .main-h1 {
-    width: max-content;
-    font-size: 60pt;
-    margin-left: 3rem;
-    margin-bottom: 3rem;
-    
+  width: max-content;
+  font-size: 60pt;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
 }
 
 .carousel-images {
-    justify-content: center;
-    display: flex;
-    align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
-
-
 .carousel-images img {
-    width: 102rem;
-    height: 26rem;
-    border-radius: 0.625rem;
-    cursor: pointer;
-    border: solid;
-    border-color: transparent;
-    transition: all .8s ease;
-    -webkit-transition: all .8s;
+  width: 102rem;
+  height: 26rem;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  border: solid;
+  border-color: transparent;
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s;
 }
 
 .carousel-images img:hover {
-    border-color: #13B3F8;
-
-    
+  border-color: #13b3f8;
 }
 
 .discount-button {
-    background: none;
-    cursor: pointer;
-    border: none;
+  background: none;
+  cursor: pointer;
+  border: none;
 }
 
 .discount-button.left {
-    margin-right: 3rem;
-    transform: rotate(180deg);
+  margin-right: 3rem;
+  transform: rotate(180deg);
 }
 
 .discount-button.right {
-    margin-left: 3rem;
+  margin-left: 3rem;
 }
 
 .discount-button svg path {
-    transition: .8s;
-    -webkit-transition: linear .8s;
+  transition: 0.8s;
+  -webkit-transition: linear 0.8s;
 }
 
 .discount-button svg path:hover {
-    fill: #000000;
-    stroke: #13B3F8;
+  fill: #000000;
+  stroke: #13b3f8;
 }
 
 .discount-button svg {
-    margin-left: -1.2rem;
-    margin-bottom: -1.2rem;
-    margin-top: -1.2rem;
+  margin-left: -1.2rem;
+  margin-bottom: -1.2rem;
+  margin-top: -1.2rem;
 }
 
 .carousel-button-discount {
-    align-items: center;
-    display: flex;
-    justify-content: center; 
-    margin-bottom: 5rem;
-    height: 3.438rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  height: 3.438rem;
 }
 
-
 .carousel-button {
-    background: none;
-    cursor: pointer;
-    border: none;
-    margin: 1rem;
+  background: none;
+  cursor: pointer;
+  border: none;
+  margin: 1rem;
 }
 
 .carousel-button svg rect {
-    transition: .8s;
-    -webkit-transition: linear .8s;
+  transition: 0.8s;
+  -webkit-transition: linear 0.8s;
 }
 
-.carousel-button svg rect:hover{
-    fill: #000000;
-    stroke: #13B3F8;
+.carousel-button svg rect:hover {
+  fill: #000000;
+  stroke: #13b3f8;
 }
 
 .carousel-button svg rect.active {
-    fill: #000000;
-    stroke: #13B3F8;
+  fill: #000000;
+  stroke: #13b3f8;
 }

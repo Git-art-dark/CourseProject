@@ -1,0 +1,94 @@
+.footer {
+  height: 25rem;
+  background: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-footer {
+  margin: 0rem 0rem 0rem 15rem;
+  width: 50%;
+  font-size: 20pt;
+}
+
+.left-footer h1 {
+  font-size: 30pt;
+  margin-bottom: 1rem;
+}
+
+.call {
+  display: flex;
+  flex-direction: row;
+}
+
+.call p {
+  margin-left: 1rem;
+  transition: color 0.8s;
+  -webkit-transition: color linear 0.8s;
+  cursor: copy;
+}
+
+.call p:hover {
+  color: #13b3f8;
+}
+
+.e-mail p a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.8s ease;
+}
+
+.e-mail p a:hover {
+  color: #13b3f8;
+  text-decoration: none;
+}
+
+.right-footer {
+  margin: 2rem 0rem 0rem 2rem;
+  width: 50%;
+  font-size: 20pt;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.vk-logo img {
+  height: 5rem;
+}
+
+.yandex-logo img {
+  height: 5rem;
+}
+
+.right-footer li {
+  list-style-type: none;
+}
+
+.right-footer li a {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: white;
+  transition: color 0.8s;
+  -webkit-transition: color linear 0.8s;
+}
+
+.right-footer li a:hover {
+  color: #13b3f8;
+}
+
+.copyright {
+  width: 100%;
+  font-size: 11pt;
+}
+
+.copyright p {
+  padding-top: 1rem;
+}
