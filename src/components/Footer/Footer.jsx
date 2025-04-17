@@ -31,16 +31,16 @@ export default function Footer() {
         </div>
         <div className="right-footer">
           <li>
-            <a href="https://23.rosguard.gov.ru/page/index/voennaya-sluzhba-po-kontraktu-v-podrazdeleniyax-yuzhnogo-okruga-vojsk-nacionalnoj-gvardii-rossijskoj-federacii">
+            <a href="https://img.freepik.com/free-photo/view-adorable-kitten-with-simple-background_23-2150758088.jpg?t=st=1744915502~exp=1744919102~hmac=4bdbc9725e03d5f974e8c400dc779095a398cb8936862defa9736eff139e6acb&w=996">
               Доставка
             </a>
-            <a href="https://23.rosguard.gov.ru/page/index/voennaya-sluzhba-po-kontraktu-v-podrazdeleniyax-yuzhnogo-okruga-vojsk-nacionalnoj-gvardii-rossijskoj-federacii">
+            <a href="https://img.freepik.com/free-photo/view-adorable-kitten-with-simple-background_23-2150758088.jpg?t=st=1744915502~exp=1744919102~hmac=4bdbc9725e03d5f974e8c400dc779095a398cb8936862defa9736eff139e6acb&w=996">
               Оплата
             </a>
-            <a href="https://23.rosguard.gov.ru/page/index/voennaya-sluzhba-po-kontraktu-v-podrazdeleniyax-yuzhnogo-okruga-vojsk-nacionalnoj-gvardii-rossijskoj-federacii">
+            <a href="https://img.freepik.com/free-photo/view-adorable-kitten-with-simple-background_23-2150758088.jpg?t=st=1744915502~exp=1744919102~hmac=4bdbc9725e03d5f974e8c400dc779095a398cb8936862defa9736eff139e6acb&w=996">
               Дополнительные услуги
             </a>
-            <a href="https://23.rosguard.gov.ru/page/index/voennaya-sluzhba-po-kontraktu-v-podrazdeleniyax-yuzhnogo-okruga-vojsk-nacionalnoj-gvardii-rossijskoj-federacii">
+            <a href="https://img.freepik.com/free-photo/view-adorable-kitten-with-simple-background_23-2150758088.jpg?t=st=1744915502~exp=1744919102~hmac=4bdbc9725e03d5f974e8c400dc779095a398cb8936862defa9736eff139e6acb&w=996">
               Обмен и возврат
             </a>
           </li>
