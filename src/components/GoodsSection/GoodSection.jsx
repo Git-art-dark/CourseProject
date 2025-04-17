@@ -15,14 +15,14 @@ export default function GoodsSection() {
   return (
     <section className="inline">
       <GoodsNew
-        className={"margin-first-elem product-section commissioner-regular"}
+        className={"product-section product-section commissioner-regular"}
       />
       <GoodsNew className={"product-section commissioner-regular"} />
       <GoodsNew className={"product-section commissioner-regular"} />
       <GoodsNew className={"product-section commissioner-regular"} />
       <GoodsNew className={"product-section commissioner-regular"} />
       <GoodsNew
-        className={"margin-last-elem product-section commissioner-regular"}
+        className={"product-section commissioner-regular"}
       />
     </section>
   );

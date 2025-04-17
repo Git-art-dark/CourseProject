@@ -9,6 +9,14 @@
   margin-bottom: -1.5rem;
 }
 
+.display-none-flag {
+  display: none;
+}
+
+.width {
+  height: 51rem ;
+}
+
 .main-h1 {
   width: max-content;
   font-size: 60pt;
@@ -25,9 +33,9 @@
 .carousel-images img {
   width: 102rem;
   height: 26rem;
-  border-radius: 0.625rem;
+  border-radius: 2rem;
   cursor: pointer;
-  border: solid;
+  border: solid .5rem ;
   border-color: transparent;
   transition: all 0.8s ease;
   -webkit-transition: all 0.8s;

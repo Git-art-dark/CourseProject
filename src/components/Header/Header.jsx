@@ -1,5 +1,4 @@
-import { logo } from "../../imports";
-import { pages, svgProps } from "../../data";
+import { svgProps } from "../../data";
 
 import Navbar from "./LinkPages/Navbar";
 
@@ -8,10 +7,10 @@ const locate = "Краснодар";
 export default function Header() {
   return (
     <header>
-      <img src={logo} alt="Logo" id="main-logo" />
-      {pages.map((page, index) => (
-        <Navbar key={index} title={page} />
-      ))}
+      <div id="right-navbar">
+        
+        <Navbar />
+      </div>
 
       <div id="left-navbar">
         <h1 className="arsenal-sc-regular">

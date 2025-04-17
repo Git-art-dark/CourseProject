@@ -8,8 +8,15 @@ import "./components/Discount/Discount.css";
 import "./components/NewItems/NewItems.css";
 import "./components/Partners/Partners.css";
 import "./components/Footer/Footer.css";
+import "./components/Header/LinkPages/Navbar.css";
+import "./components/ScrollToTopButton/ScrollToTopButton.css"
 
 import "./assets/adaptive1600.css";
 import "./assets/adaptive360.css";
+import { BrowserRouter } from "react-router-dom";
 
-createRoot(document.getElementById("root")).render(<App />);
+createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);

@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import { carousel1, carousel2, carousel3 } from "../../imports";
 
-export default function Discount() {
+export default function Discount({ classNameFlag_1, className }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [carouselImage, setCarouselImage] = useState(carousel1);
 
   const images = [carousel1, carousel2, carousel3];
+  console.log(classNameFlag_1)
+  const classNameFlag = classNameFlag_1 ? " display-none-flag" : "";
+  const classNameWidth = className ? " width" : "";
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -14,7 +17,7 @@ export default function Discount() {
         setCarouselImage(images[nextIndex]);
         return nextIndex;
       });
-    }, 30000);
+    }, 15000);
 
     return () => clearInterval(interval);
   }, []);
@@ -53,8 +56,8 @@ export default function Discount() {
 
   return (
     <>
-      <div className="discount-flags"></div>
-      <div className="discount-main-screen">
+      <div className={"discount-flags" + classNameFlag}></div>
+      <div className={"discount-main-screen" + classNameWidth}>
         <h1 className="main-h1 arsenal-sc-bold">Акции</h1>
 
         <div className="carousel-images">
@@ -71,7 +74,7 @@ export default function Discount() {
           <ButtonCarousel index={2} />
         </div>
       </div>
-      <div className="discount-flags bottom"></div>
+      <div className={"discount-flags bottom" + classNameFlag}></div>
     </>
   );
 }

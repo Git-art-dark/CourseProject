@@ -1,3 +1,15 @@
+header {
+  z-index: 1;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  padding: 0 2rem;
+  justify-content: start;
+  align-items: center;
+  background: #000000;
+  color: white;
+}
+
 #main-logo {
   height: 3rem;
 }
@@ -24,6 +36,12 @@
   align-items: center;
 }
 
+#right-navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .button-nav-search-cart {
   background: none;
   border: none;
@@ -32,7 +50,7 @@
 }
 
 .button-nav-search-cart svg path {
-  transition: 0.8s;
+  transition: fill 0.8s linear;
   -webkit-transition: linear 0.8s;
 }
 

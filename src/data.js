@@ -14,5 +14,3 @@ export const svgProps = [
     strokeWidth: "5",
   },
 ];
-
-export const pages = ["Акции", "Услуги", "Контакты", "Оплата", "Магазины"];

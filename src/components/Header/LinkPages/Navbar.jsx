@@ -1,7 +1,27 @@
-export default function Navbar(props) {
+import { Link, NavLink } from "react-router-dom";
+import { logo } from "../../../imports";
+
+export default function Navbar() {
   return (
-    <a href="#" className="arsenal-sc-regular header-nav-text">
-      {props.title}
-    </a>
+    <>
+      <Link to={"/"}>
+        <img src={logo} alt="Logo" id="main-logo" />
+      </Link>
+      <NavLink className={"link arsenal-sc-regular"} to={"/"}>
+        Главная
+      </NavLink>
+      <NavLink className={"link arsenal-sc-regular"} to={"/discount"}>
+        Акции
+      </NavLink>
+      <NavLink className={"link arsenal-sc-regular"} to={"/service"}>
+        Услуги
+      </NavLink>
+      <NavLink className={"link arsenal-sc-regular"} to={"/contacts"}>
+        Контакты
+      </NavLink>
+      <NavLink className={"link arsenal-sc-regular"} to={"/shops"}>
+        Магазины
+      </NavLink>
+    </>
   );
 }
