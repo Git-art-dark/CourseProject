@@ -1,0 +1,28 @@
+.not-found {
+  height: 51rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80pt;
+  font-style: italic;
+  animation: not-found 4s infinite; /* Увеличиваем длительность для плавности */
+  animation-timing-function: ease-in-out; /* Меняем на ease-in-out для плавного ускорения/замедления */
+}
+
+@keyframes not-found {
+  0% {
+    filter: drop-shadow(0 0 0rem #13b3f8);
+  }
+  25% {
+    filter: drop-shadow(0 0 0.5rem #13b3f8);
+  }
+  50% {
+    filter: drop-shadow(0 0 1rem #13b3f8);
+  }
+  75% {
+    filter: drop-shadow(0 0 0.5rem #13b3f8);
+  }
+  100% {
+    filter: drop-shadow(0 0 0rem #13b3f8);
+  }
+}

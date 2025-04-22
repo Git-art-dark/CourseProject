@@ -2,7 +2,7 @@
   margin-top: -1.5rem;
   width: 100%;
   height: 5rem;
-  background-image: url("../../../public/images/flags-top.png");
+  background-image: url("/images/flags-top.png");
 }
 .discount-flags.bottom {
   transform: rotate(180deg);

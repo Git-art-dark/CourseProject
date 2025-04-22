@@ -55,15 +55,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.not-found {
-  height: 51rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 80pt;
-  font-style: italic;
-
-}
 
 .not-found h1 {
   text-decoration: #13b3f8 underline wavy;

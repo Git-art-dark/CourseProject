@@ -1,0 +1,70 @@
+.main-delivery {
+  max-width: 65%;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-top: 2rem;
+  font-family: "Arsenal SC", sans-serif;
+}
+
+.service h2 {
+  font-weight: 700;
+  font-size: 25pt;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 17pt;
+}
+
+.service {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #000000;
+  transition: all 0.8s ease;
+  border: solid 0.2rem;
+  border-color: #13b3f8;
+}
+
+.service li {
+  background-color: white;
+  color: #000000;
+  font-weight: 700;
+  font-size: 15pt;
+  border-color: #13b3f8;
+  transition: all 0.8s ease;
+  cursor: default;
+}
+
+.service li:hover {
+  filter: drop-shadow(0 0 1rem #13b3f8);
+}
+
+.service:hover {
+  filter: drop-shadow(0 0 0.75rem #13b3f8);
+}
+
+.service h2,
+ul,
+p,
+.price {
+  margin: 1rem;
+}
+
+.service li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #13b3f8;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
