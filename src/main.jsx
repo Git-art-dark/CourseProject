@@ -9,7 +9,11 @@ import "./components/NewItems/NewItems.css";
 import "./components/Partners/Partners.css";
 import "./components/Footer/Footer.css";
 import "./components/Header/LinkPages/Navbar.css";
-import "./components/ScrollToTopButton/ScrollToTopButton.css"
+import "./components/ScrollToTopButton/ScrollToTopButton.css";
+import "./pages/ServicesPage/ServicesPage.css";
+import "./components/Button/Button.css";
+import "./pages/NotFoundPage/NotFoundPage.css";
+import "./pages/п/tov.css"
 
 import "./assets/adaptive1600.css";
 import "./assets/adaptive360.css";
