@@ -1,0 +1,22 @@
+.product-card {
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+    /* Остальные стили карточки */
+  }
+  
+  .product-card.added {
+    background-color: #f0fff0; /* Светло-зеленый фон */
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.3);
+    border-color: #28a745;
+    transform: scale(1.02);
+  }
+  
+  .product-card.added .price {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .product-card.added button {
+    background-color: #28a745;
+    color: white;
+  }

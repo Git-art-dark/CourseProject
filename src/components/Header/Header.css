@@ -79,3 +79,60 @@ header {
   background-color: black;
   color: white;
 }
+
+.modal-overlay {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+.modal-content {
+  z-index: 11;
+  border: solid;
+  border-color: #13b3f8;
+  width: max-content;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 50vh;
+  max-width: 50vh;
+  min-height: 80vh;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.close-modal {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 20pt;
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 800;
+  border-radius: 100%;
+  border: none;
+  border-color: transparent;
+  border-width: none;
+  border-style: solid;
+  transition: all 0.8s;
+  -webkit-transition: linear 0.8s;
+  border-color: white;
+}
+.close-modal:hover {
+  border-color: #13b3f8;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}

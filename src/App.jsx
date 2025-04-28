@@ -6,17 +6,17 @@ import Layout from "./components/Layout/Layout";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import ServicesPage from "./pages/ServicesPage/ServicesPage";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
-import ShopsPage from "./pages/ShopsPage/ShopsPage";
+import CatalogPage from "./pages/CatalogPage/CatalogPage";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<HomePage />} index />
+        <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/discount" element={<DiscountPage />} />
         <Route path="/service" element={<ServicesPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
-        <Route path="/shops" element={<ShopsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

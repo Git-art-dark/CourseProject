@@ -13,7 +13,8 @@ import "./components/ScrollToTopButton/ScrollToTopButton.css";
 import "./pages/ServicesPage/ServicesPage.css";
 import "./components/Button/Button.css";
 import "./pages/NotFoundPage/NotFoundPage.css";
-import "./pages/п/tov.css"
+import "./pages/CatalogPage/CatalogPage.css";
+import "./components/Cart/Cart.css"
 
 import "./assets/adaptive1600.css";
 import "./assets/adaptive360.css";

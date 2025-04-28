@@ -4,7 +4,6 @@ import NewItems from "../../components/NewItems/NewItems";
 import Bestsellers from "../../components/Bestsellers/Bestsellers";
 import Partners from "../../components/Partners/Partners";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
-import Catalog from "../п/tov";
 
 export default function HomePage() {
   return (
