@@ -6,7 +6,7 @@ export default function Partners() {
       <img
         src={srcImage}
         alt="s"
-        className={"partners-img partners-img" + className}
+        className={"partners-img not-select partners-img" + className}
       ></img>
     );
   }

@@ -14,7 +14,7 @@ export default function ServicesPage() {
           <li>Подъем на любой этаж (включая услуги грузчиков)</li>
           <li>Распаковка и проверка техники при вас</li>
         </ul>
-        <div className="price">Стоимость: от 500 руб.</div>
+        <div className="price-service">Стоимость: от 500 руб.</div>
         <div className="button-section">
           <ButtonMain to="/delivery">Доставка</ButtonMain>
         </div>
@@ -32,7 +32,7 @@ export default function ServicesPage() {
           <li>Подключение к водоснабжению и канализации</li>
           <li>Проверка работоспособности после установки</li>
         </ul>
-        <div className="price">От 1 500 руб.</div>
+        <div className="price-service">От 1 500 руб.</div>
         <div className="button-section">
           <ButtonMain to="/repair">Заказать установку</ButtonMain>
         </div>
@@ -49,7 +49,7 @@ export default function ServicesPage() {
           <li>Выезд мастера на дом</li>
           <li>Продление гарантии на дополнительный срок</li>
         </ul>
-        <div className="price">Бесплатно (в период гарантии)</div>
+        <div className="price-service">Бесплатно (в период гарантии)</div>
         <div className="button-section">
           <ButtonMain to="/warranty">Оставить заявку</ButtonMain>
         </div>
@@ -67,7 +67,7 @@ export default function ServicesPage() {
           <li>Гарантия на выполненные работы</li>
           <li>Срочный ремонт</li>
         </ul>
-        <div className="price">От 2 000 руб.</div>
+        <div className="price-service">От 2 000 руб.</div>
         <div className="button-section">
           <ButtonMain to="/repair">Вызвать мастера</ButtonMain>
         </div>
@@ -81,7 +81,7 @@ export default function ServicesPage() {
           <li>Официальная утилизация с документами</li>
           <li>Скидка на новую технику при утилизации старой</li>
         </ul>
-        <div className="price">
+        <div className="price-service">
           От 1 000 руб. (или бесплатно при покупке новой техники)
         </div>
 
@@ -99,7 +99,7 @@ export default function ServicesPage() {
           <li>Приоритетное обслуживание</li>
           <li>Бесплатная диагностика 2 раза в год</li>
         </ul>
-        <div className="price">От 3 000 руб./год</div>
+        <div className="price-service">От 3 000 руб./год</div>
         <div className="button-section">
           <ButtonMain to="/extended-warranty">
             Оформить расширенну гарантию

@@ -87,3 +87,10 @@ section ul li {
   height: 20rem;
   background-color: #000000;
 }
+
+
+/* temp */
+
+.button-nav-search {
+  display: none;
+}

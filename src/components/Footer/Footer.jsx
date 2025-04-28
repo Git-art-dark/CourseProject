@@ -3,7 +3,7 @@ import { vkLogo, yandexLogo } from "../../imports";
 export default function Footer() {
   return (
     <>
-      <div className="solid-stick"></div>
+      {/* <div className="solid-stick"></div> */}
       <div className="footer arsenal-sc-regular">
         <div className="left-footer">
           <h1 className="arsenal-sc-bold">Контакты</h1>

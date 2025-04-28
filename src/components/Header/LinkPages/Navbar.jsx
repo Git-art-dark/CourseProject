@@ -10,6 +10,9 @@ export default function Navbar() {
       <NavLink className={"link arsenal-sc-regular"} to={"/"}>
         Главная
       </NavLink>
+      <NavLink className={"link arsenal-sc-regular"} to={"/catalog"}>
+        Каталог
+      </NavLink>
       <NavLink className={"link arsenal-sc-regular"} to={"/discount"}>
         Акции
       </NavLink>
@@ -18,9 +21,6 @@ export default function Navbar() {
       </NavLink>
       <NavLink className={"link arsenal-sc-regular"} to={"/contacts"}>
         Контакты
-      </NavLink>
-      <NavLink className={"link arsenal-sc-regular"} to={"/shops"}>
-        Магазины
       </NavLink>
     </>
   );

@@ -29,3 +29,7 @@
 .new-h1.pt-serif-bold.margin-h1-partners {
     margin-bottom: 5rem;
 }
+
+.not-select {
+    user-select: none;
+}

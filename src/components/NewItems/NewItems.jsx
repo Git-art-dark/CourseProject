@@ -1,16 +1,34 @@
-import { useState } from 'react'
-import GoodsSection from '../GoodsSection/GoodSection'
-
+import { useState } from "react";
+import { productsData, itemsCart } from "../../data";
+import ProductGrid from "../ProductGrid/ProductGrid";
 
 export default function NewItems() {
+  const [products, setProducts] = useState(productsData || []); 
+  const [currentPage, setCurrentPage] = useState(1);
+  const [cartItems, setCartItems] = useState([]); 
+  
+  const productsPerPage = 10;
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  
 
+  const currentProducts = Array.isArray(products) 
+    ? products.slice(indexOfFirstProduct, indexOfLastProduct)
+    : [];
 
-    return (
-        <>
-            <div className="solid-stick"></div>
-            <h1 className="new-h1 arsenal-sc-bold">Новинки</h1>
-            <GoodsSection />
-            <GoodsSection />
-        </>
-    )
+  const handleAddToCart = (product) => {
+    setCartItems((prevItems) => [...prevItems, product]);
+    itemsCart.push(product);
+  };
+
+  return (
+    <>
+      <div className="solid-stick"></div>
+      <h1 className="new-h1 arsenal-sc-bold">Новинки</h1>
+      <ProductGrid 
+        products={currentProducts} 
+        onAddToCart={handleAddToCart} 
+      />
+    </>
+  );
 }
