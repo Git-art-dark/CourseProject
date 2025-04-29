@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { svgProps } from "../../data";
 import Navbar from "./LinkPages/Navbar";
 import Cart from "../Cart/Cart";
+import { Link } from "react-router-dom";
 
 
 
@@ -93,7 +94,7 @@ export default function Header() {
           </svg>
         </button>
 
-        <button className="button-nav arsenal-sc-bold">Войти</button>
+        <Link to={'/login'}><button className="button-nav arsenal-sc-bold">Войти</button></Link>
 
         <button className="button-nav-search-cart" onClick={toggleModal}>
           <svg

@@ -7,6 +7,8 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import ServicesPage from "./pages/ServicesPage/ServicesPage";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import CatalogPage from "./pages/CatalogPage/CatalogPage";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import AdminPage from "./pages/AdminPage/AdminPage"
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/discount" element={<DiscountPage />} />
         <Route path="/service" element={<ServicesPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/admin" element={<AdminPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
