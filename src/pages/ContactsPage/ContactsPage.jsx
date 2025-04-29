@@ -32,7 +32,7 @@ export default function ContactsPage() {
   };
 
   return (
-    <div className="contacts-page">
+    <div className="contacts-page arsenal-sc-regular">
 
       <div className="contacts-container">
         <div className="contact-info">
@@ -123,7 +123,7 @@ export default function ContactsPage() {
               />
             </div>
 
-            <button type="submit" className="submit-btn">
+            <button type="submit" className="submit-btn arsenal-sc-regular">
               Отправить сообщение
             </button>
           </form>
