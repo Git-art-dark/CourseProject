@@ -16,7 +16,9 @@ export default function ServicesPage() {
         </ul>
         <div className="price-service">Стоимость: от 500 руб.</div>
         <div className="button-section">
-          <ButtonMain to="/delivery">Доставка</ButtonMain>
+          <ButtonMain className={"service-btn"} to="/delivery">
+            Доставка
+          </ButtonMain>
         </div>
       </section>
 
@@ -34,7 +36,9 @@ export default function ServicesPage() {
         </ul>
         <div className="price-service">От 1 500 руб.</div>
         <div className="button-section">
-          <ButtonMain to="/repair">Заказать установку</ButtonMain>
+          <ButtonMain className={"service-btn"} to="/repair">
+            Заказать установку
+          </ButtonMain>
         </div>
       </section>
 
@@ -51,7 +55,9 @@ export default function ServicesPage() {
         </ul>
         <div className="price-service">Бесплатно (в период гарантии)</div>
         <div className="button-section">
-          <ButtonMain to="/warranty">Оставить заявку</ButtonMain>
+          <ButtonMain className={"service-btn"} to="/warranty">
+            Оставить заявку
+          </ButtonMain>
         </div>
       </section>
 
@@ -69,7 +75,9 @@ export default function ServicesPage() {
         </ul>
         <div className="price-service">От 2 000 руб.</div>
         <div className="button-section">
-          <ButtonMain to="/repair">Вызвать мастера</ButtonMain>
+          <ButtonMain className={"service-btn"} to="/repair">
+            Вызвать мастера
+          </ButtonMain>
         </div>
       </section>
 
@@ -86,7 +94,9 @@ export default function ServicesPage() {
         </div>
 
         <div className="button-section">
-          <ButtonMain to="/recycling">Заказать утилизацию</ButtonMain>
+          <ButtonMain className={"service-btn"} to="/recycling">
+            Заказать утилизацию
+          </ButtonMain>
         </div>
       </section>
 
@@ -101,7 +111,7 @@ export default function ServicesPage() {
         </ul>
         <div className="price-service">От 3 000 руб./год</div>
         <div className="button-section">
-          <ButtonMain to="/extended-warranty">
+          <ButtonMain className={"service-btn"} to="/extended-warranty">
             Оформить расширенну гарантию
           </ButtonMain>
         </div>
