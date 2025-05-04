@@ -43,6 +43,7 @@
 
 .carousel-images img:hover {
   border-color: #13b3f8;
+  filter: drop-shadow(0 0 2rem #13b3f8);
 }
 
 .discount-button {

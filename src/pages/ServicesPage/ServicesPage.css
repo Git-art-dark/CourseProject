@@ -23,8 +23,8 @@
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
-  color: white;
-  background-color: #000000;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
   transition: all 0.8s ease;
   border: solid 0.2rem;
   border-color: #13b3f8;
@@ -69,4 +69,8 @@ p,
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button-main.service-btn {
+  width: auto;
 }
