@@ -3,10 +3,7 @@ import { svgProps } from "../../data";
 import Navbar from "./LinkPages/Navbar";
 import Cart from "../Cart/Cart";
 import { Link } from "react-router-dom";
-
-
-
-
+import { itemsCart } from "../../data";
 
 const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
@@ -23,11 +20,14 @@ const Modal = ({ isOpen, onClose, children }) => {
   );
 };
 
-
-
 export default function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [city, setCity] = useState("Загрузка...");
+  const [cartItems, setCartItems] = useState(itemsCart);
+
+  useEffect(() => {
+    setCartItems([...itemsCart]);
+  }, [itemsCart]);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -68,7 +68,6 @@ export default function Header() {
     }
   }, []);
 
-
   return (
     <header>
       <div id="right-navbar">
@@ -94,9 +93,18 @@ export default function Header() {
           </svg>
         </button>
 
-        <Link to={'/login'}><button className="button-nav arsenal-sc-bold">Войти</button></Link>
+        <Link to={"/login"}>
+          <button className="button-nav arsenal-sc-bold">Войти</button>
+        </Link>
 
-        <button className="button-nav-search-cart" onClick={toggleModal}>
+        <button
+          className={
+            cartItems.length > 0
+              ? "button-nav-search-cart active-cart"
+              : "button-nav-search-cart" // (
+          }
+          onClick={toggleModal}
+        >
           <svg
             width="45"
             height="45"

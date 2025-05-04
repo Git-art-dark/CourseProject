@@ -10,7 +10,6 @@ const Cart = () => {
   };
 
   const addItemToItems = (newItem) => {
-    // Добавляем элемент в массив items
     setItems((prevItems) => [...prevItems, newItem]);
   };
 

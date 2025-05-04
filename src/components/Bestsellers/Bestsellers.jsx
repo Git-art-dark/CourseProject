@@ -16,21 +16,20 @@ export default function Bestsellers() {
     ? products.slice(indexOfFirstProduct, indexOfLastProduct)
     : [];
 
-  const handleAddToCart = (product) => {
-    toast.success(`${product.name} добавлен в корзину!`, {
-      position: "top-right",
-      autoClose: 4000,
-      className: "toast",
-    });
-    setCartItems((prevItems) => [...prevItems, product]);
-    itemsCart.push(product);
-  };
+  // const handleAddToCart = (product) => {
+  //   toast.success(`${product.name} добавлен в корзину!`, {
+  //     position: "top-right",
+  //     autoClose: 4000,
+  //     className: "toast",
+  //   });
+  //   setCartItems((prevItems) => [...prevItems, product]);
+  //   itemsCart.push(product);
+  // };
   return (
     <>
-      <ToastContainer />
       <div className="solid-stick"></div>
       <h1 className="new-h1 arsenal-sc-bold">Хиты продаж</h1>
-      <ProductGrid products={currentProducts} onAddToCart={handleAddToCart} />
+      <ProductGrid products={currentProducts} />
     </>
   );
 }

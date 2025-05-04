@@ -1,7 +1,22 @@
 import { Link } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
+import { itemsCart } from "../../data";
+import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
-const ProductGrid = ({ products, onAddToCart }) => {
+const ProductGrid = ({ products }) => {
+  const [cartItems, setCartItems] = useState([]);
+
+  const handleAddToCart = (product) => {
+      toast.success(`${product.name} добавлен в корзину!`, {
+        position: "top-right",
+        autoClose: 4000,
+        className: "toast",
+      });
+      setCartItems((prevItems) => [...prevItems, product]);
+      itemsCart.push(product);
+    };
+  
+
   return (
     <div className="product-grid">
       {products.length > 0 ? (
@@ -25,13 +40,12 @@ const ProductGrid = ({ products, onAddToCart }) => {
               {/* Кнопка добавления товара в корзину */}
               {product.inStock && (
                 <button
-                  className="button-main"
-                  onClick={() => onAddToCart(product)}
+                  className="button-main arsenal-sc-bold"
+                  onClick={() => handleAddToCart(product)}
                 >
                   В корзину
                 </button>
               )}
-
             </div>
           </div>
         ))
