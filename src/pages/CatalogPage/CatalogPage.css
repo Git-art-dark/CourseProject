@@ -1,7 +1,7 @@
 .catalog {
   min-height: 93vh;
   width: 100%;
-  padding: 20px;
+  padding: 1.25rem;
   height: fit-content;
   background-color: white;
 }
@@ -9,15 +9,15 @@
 .controls {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 0.9375rem;
 }
 
 .filters,
 .sort {
   display: flex;
-  gap: 15px;
+  gap: 0.9375rem;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -26,15 +26,15 @@
 .filters select,
 .sort select {
   outline: none;
-  padding: 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.25rem;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+  gap: 1.5625rem;
   margin-bottom: 1rem;
   margin: 0 1rem 1rem 1rem;
 }
@@ -68,15 +68,15 @@
 
 .product-card img {
   width: 80%;
-  height: 200px;
+  height: 12.5rem;
   object-fit: cover;
 }
 
 .product-card h3 {
   text-align: center;
   padding: 0 1rem;
-  margin: 10px 0;
-  font-size: 16px;
+  margin: 0.625rem 0;
+  font-size: 1rem;
   transition: all 0.8s ease;
   -webkit-transition: all 0.8s ease;
 }
@@ -86,44 +86,44 @@
 }
 
 .product-info {
-  padding: 0 15px 15px;
+  padding: 0 0.9375rem 0.9375rem;
 }
 
 .price {
   text-align: center;
   font-weight: 900;
-  font-size: 19pt;
+  font-size: 1.1875rem;
   color: #d32f2f;
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
 
 .rating {
   display: flex;
   justify-content: space-between;
   color: #ffc107;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .in-stock {
   color: #388e3c;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .out-of-stock {
   color: #f44336;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .pagination {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  gap: 5px;
+  margin-top: 1.875rem;
+  gap: 0.3125rem;
 }
 
 .pagination button {
-  padding: 8px 12px;
-  border: 1px solid #ddd;
+  padding: 0.5rem 0.75rem;
+  border: 0.0625rem solid #ddd;
   background: white;
   cursor: pointer;
 }
@@ -137,8 +137,8 @@
 .no-results {
   grid-column: 1 / -1;
   text-align: center;
-  padding: 50px;
-  font-size: 18px;
+  padding: 3.125rem;
+  font-size: 1.125rem;
   color: #666;
 }
 
@@ -154,7 +154,7 @@
 .button-main {
   width: 100%;
   height: 3rem;
-  font-size: 13pt;
+  font-size: 1.2rem;
 }
 .toast {
   width: 35vh;
@@ -167,4 +167,140 @@
 
 .toast .Toastify__progress-bar--success {
   background-color: #13b3f8;
+}
+
+/* Основные стили для каталога */
+.catalog {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.category-filters, .price-filters {
+  margin-bottom: 0.9375rem;
+}
+
+.category-filters h3, .price-filters h3 {
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+}
+
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.category-tag {
+  padding: 0.5rem 1rem;
+  border-radius: 1.25rem;
+  background: #000000;
+  color: #ffffff;
+  border: solid;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+  transition: all .8s ease;
+  -webkit-transition: all .8 ease;
+}
+
+.category-tag:hover {
+  background: #ffffff;
+  border-color: #13b3f8;
+  color: #000000;
+}
+
+.category-tag.active {
+  color: black;
+  background-color: #13b3f8;
+  border-color: #000000;
+}
+
+.price-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.price-inputs input {
+  width: 5rem;
+  padding: 0.5rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.25rem;
+}
+
+.price-inputs span {
+  color: #666;
+}
+
+.stock-filter label {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.stock-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.sort select {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #ddd;
+}
+
+/* Стили для пагинации */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.3125rem;
+  margin-top: 1.875rem;
+}
+
+.select-page {
+  padding: 0.5rem 0.75rem;
+  border: 0.0625rem solid #ddd;
+  background: #f5f5f5;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.select-page.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+@media (max-width: 48rem) {
+  .filters-container {
+    flex-direction: column;
+    gap: 0.9375rem;
+  }
+  
+  .category-tags {
+    justify-content: center;
+  }
+  
+  .price-inputs {
+    justify-content: center;
+  }
 }

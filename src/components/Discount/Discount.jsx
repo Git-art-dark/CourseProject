@@ -6,7 +6,6 @@ export default function Discount({ classNameFlag_1, className }) {
   const [carouselImage, setCarouselImage] = useState(carousel1);
 
   const images = [carousel1, carousel2, carousel3];
-  console.log(classNameFlag_1)
   const classNameFlag = classNameFlag_1 ? " display-none-flag" : "";
   const classNameWidth = className ? " width" : "";
 
