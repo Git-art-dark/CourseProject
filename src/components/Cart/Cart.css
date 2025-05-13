@@ -3,7 +3,8 @@
 }
 
 .cart-item img {
-  width: 3rem;
+  width: 7rem;
+  height: 5rem;
   border-radius: 20%;
 }
 
@@ -20,7 +21,7 @@
 
 .claer-list-cart {
   position: absolute;
-  right: 20vh;
+  right: 17vh;
   color: white;
   font-size: 15pt;
   width: auto + 1rem;

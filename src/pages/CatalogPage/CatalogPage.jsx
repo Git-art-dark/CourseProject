@@ -3,6 +3,7 @@ import { itemsCart, productsData } from "../../data";
 import ProductGrid from "../../components/ProductGrid/ProductGrid";
 import { ToastContainer, toast } from "react-toastify";
 
+
 const CatalogPage = () => {
   const [products, setProducts] = useState(productsData);
   const [filters, setFilters] = useState({
@@ -84,6 +85,7 @@ const CatalogPage = () => {
       autoClose: 4000,
       className: "toast",
     });
+    
     setCartItems((prevItems) => [...prevItems, product]);
     itemsCart.push(product);
   };
