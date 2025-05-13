@@ -31,7 +31,7 @@ const Cart = () => {
         {itemsCart.map((item, index) => (
           <li key={index} className="cart-item">
             <span>
-              <img src={item.image} alt="" />
+              <img src={item.image[0]} alt="" />
               <p>{item.name} </p>
               <p>Цена: {item.price}</p>
             </span>

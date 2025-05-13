@@ -1,0 +1,143 @@
+.product-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 1400px;
+  height: 64vh;
+  margin: 0 auto;
+}
+
+.product-not-found {
+  text-align: center;
+  padding: 50px;
+}
+
+.product-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.product-image {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.availability .in-stock {
+  color: green;
+}
+
+.availability .out-of-stock {
+  color: red;
+}
+
+.rating {
+  color: #ffa41c;
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.back-link {
+  margin-top: 20px;
+  color: #0066c0;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+  }
+}
+
+.product-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.product-carousel img {
+  width: 50%;
+  height: auto;
+  
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.carousel-button-product {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.carousel-button-product svg rect {
+  transition: all 0.3s ease;
+}
+.carousel-button-product svg rect.active {
+  fill: #000000;
+  stroke: #13b3f8;
+}
+
+@media (max-width: 768px) {
+  .product-carousel {
+    max-width: 100%;
+  }
+}
+
+.back-link {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  left: 1rem;
+  top: 5.5rem;
+  border: solid;
+  border-radius: 100%;
+  border-color: transparent;
+  transition: all 0.8s ease;
+}
+
+.back-link:hover {
+  border-color: #13b3f8;
+}
+
+.exit {
+  padding-left: 0.1rem;
+  transform: rotate(180deg);
+  width: 2.2rem;
+  height: 2rem;
+}

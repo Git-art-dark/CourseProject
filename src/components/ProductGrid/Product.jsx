@@ -8,7 +8,7 @@ const ProductGrid = ({ products, onAddToCart }) => {
         products.map((product) => (
           <div key={product.id} className="product-card">
             <Link to={`/product/${product.id}`}>
-              <img src={product.image} alt={product.name} />
+              <img src={product.image[0]} alt={product.name} />
               <h3>{product.name}</h3>
             </Link>
             <div className="product-info">
