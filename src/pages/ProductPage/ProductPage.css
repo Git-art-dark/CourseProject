@@ -20,6 +20,8 @@
 }
 
 .product-image {
+  display: flex;
+  align-items: center;
   flex: 1;
   margin-right: 2rem;
 }

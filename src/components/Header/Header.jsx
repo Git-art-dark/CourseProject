@@ -81,7 +81,6 @@ export default function Header() {
             {city}
           </a>
         </h1>
-
         <button className="button-nav-search">
           <svg
             width="45"
@@ -92,11 +91,9 @@ export default function Header() {
             <path d={svgProps[0].d} fill={svgProps[0].fill} />
           </svg>
         </button>
-
         <Link to={"/login"}>
           <button className="button-nav arsenal-sc-bold">Войти</button>
         </Link>
-
         <button
           className={
             cartItems.length > 0
@@ -114,10 +111,9 @@ export default function Header() {
             <path d={svgProps[1].d} fill={svgProps[1].fill} />
           </svg>
         </button>
-
         {/* Модальное окно корзины */}
         <Modal isOpen={isModalOpen} onClose={toggleModal}>
-          <Cart />
+          <Cart onCloseModal={toggleModal}/>
         </Modal>
       </div>
     </header>

@@ -4,6 +4,8 @@ import { ToastContainer, toast } from "react-toastify";
 import { productsData, itemsCart } from "../../data";
 import "./ProductPage.css";
 
+import Reviews from "../../components/Reviews/Reviews";
+
 const ProductPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -84,69 +86,76 @@ const ProductPage = () => {
   }
 
   return (
-    <div className="product-page arsenal-sc-bold">
-      <ToastContainer />
-      <div className="product-container">
-        <div className="product-image">
-          <div className="product-carousel">
-            <img src={activeImage} alt={product.name} />
+    <>
+      <div className="product-page arsenal-sc-bold">
+        <ToastContainer />
+        <div className="product-container">
+          <div className="product-image">
+            <div className="product-carousel">
+              <img src={activeImage} alt={product.name} />
 
-            {images.length > 1 && (
-              <div className="carousel-indicators">
-                {images.map((_, index) => (
-                  <ImageIndicator key={index} index={index} />
-                ))}
-              </div>
+              {images.length > 1 && (
+                <div className="carousel-indicators">
+                  {images.map((_, index) => (
+                    <ImageIndicator key={index} index={index} />
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="product-details">
+            <h1>{product.name}</h1>
+            <div className="price">{product.price.toLocaleString()} ₽</div>
+
+            <div className="availability">
+              {product.inStock ? (
+                <span className="in-stock">В наличии</span>
+              ) : (
+                <span className="out-of-stock">Нет в наличии</span>
+              )}
+            </div>
+
+            <div className="rating">Рейтинг: ★ {product.rating}</div>
+
+            {product.inStock && (
+              <button
+                className="button-main"
+                onClick={() => handleAddToCart(product)}
+              >
+                Добавить в корзину
+              </button>
             )}
+
+            <div className="description">
+              <h3>Описание</h3>
+              <p>{product.description || "Описание отсутствует"}</p>
+            </div>
+            <div className="description">
+              <h3>Возможности</h3>
+              {product.features && product.features.length > 0 ? (
+                <ul>
+                  {product.features.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>Возможности отсутствует</p>
+              )}
+            </div>
+
+            <Link to="/catalog" className="back-link">
+              <img
+                src="../../../public/icons/right-arrow.png"
+                alt="exit"
+                className="exit"
+              />
+            </Link>
           </div>
-        </div>
-
-        <div className="product-details">
-          <h1>{product.name}</h1>
-          <div className="price">{product.price.toLocaleString()} ₽</div>
-
-          <div className="availability">
-            {product.inStock ? (
-              <span className="in-stock">В наличии</span>
-            ) : (
-              <span className="out-of-stock">Нет в наличии</span>
-            )}
-          </div>
-
-          <div className="rating">Рейтинг: ★ {product.rating}</div>
-
-          {product.inStock && (
-            <button
-              className="button-main"
-              onClick={() => handleAddToCart(product)}
-            >
-              Добавить в корзину
-            </button>
-          )}
-
-          <div className="description">
-            <h3>Описание</h3>
-            <p>{product.description || "Описание отсутствует"}</p>
-          </div>
-          <div className="description">
-            <h3>Возможности</h3>
-            {product.features && product.features.length > 0 ? (
-              <ul>
-                {product.features.map((feature, index) => (
-                  <li key={index}>{feature}</li>
-                ))}
-              </ul>
-            ) : (
-              <p>Возможности отсутствует</p>
-            )}
-          </div>
-
-          <Link to="/catalog" className="back-link">
-            <img src="../../../public/icons/right-arrow.png" alt="exit" className="exit" />
-          </Link>
         </div>
       </div>
-    </div>
+      <Reviews></Reviews>
+    </>
   );
 };
 

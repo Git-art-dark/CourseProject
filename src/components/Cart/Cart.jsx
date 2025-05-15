@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { itemsCart } from "../../data";
+import { Link } from "react-router-dom";
 
-const Cart = () => {
+const Cart = ({ onCloseModal }) => {
   const [cartItems, setCartItems] = useState([]); // Массив товаров в корзине
   const [items, setItems] = useState([]); // Массив всех доступных товаров
 
@@ -16,6 +17,10 @@ const Cart = () => {
   const removeItemsToTrash = () => {
     itemsCart.splice(0, itemsCart.length);
     setCartItems([]);
+  };
+  const handleOrder = () => {
+    removeItemsToTrash();
+    onCloseModal(); // Закрываем модальное окно
   };
 
   return (
@@ -39,9 +44,16 @@ const Cart = () => {
         ))}
       </ul>
       {itemsCart.length > 0 && (
-        <button className="claer-list-cart" onClick={removeItemsToTrash}>
-          Очистить
-        </button>
+        <>
+          <button className="claer-list-cart" onClick={removeItemsToTrash}>
+            Очистить
+          </button>
+          <Link to={"/login"}>
+            <button className="order-list-cart" onClick={handleOrder}>
+              Оформить заказ
+            </button>
+          </Link>
+        </>
       )}
     </div>
   );
