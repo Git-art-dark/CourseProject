@@ -21,7 +21,26 @@
 
 .claer-list-cart {
   position: absolute;
-  right: 17vh;
+  right: 3vh;
+  color: white;
+  font-size: 15pt;
+  width: auto + 1rem;
+  padding: 0rem 3rem 0rem 3rem;
+  height: 3rem;
+  border-radius: 10rem;
+  border-width: 0.3rem;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-color: transparent;
+  border-width: none;
+  border-style: solid;
+  transition: all 0.8s;
+  -webkit-transition: linear 0.8s;
+  border-color: white;
+}
+.order-list-cart {
+  position: absolute;
+  right: 27vh;
   color: white;
   font-size: 15pt;
   width: auto + 1rem;
